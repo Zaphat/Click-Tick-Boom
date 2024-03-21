@@ -1,4 +1,2 @@
-# Click-Tick-Boom
-2D Clicking Casual Android Mobile Game
-
+My first ever made game. Yayyy\
 Unity version 2023
