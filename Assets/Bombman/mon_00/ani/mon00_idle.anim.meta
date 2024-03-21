@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0fa48e07fc94a4246b4dfa5e4f28ff26
+timeCreated: 1556693439
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145319
+  packageName: 3D Monster Bomb!!
+  packageVersion: 1.0
+  assetPath: Assets/JKT_ART/mon_00/ani/mon00_idle.anim
+  uploadId: 308531

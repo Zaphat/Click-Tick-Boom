@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: e056f56de51b99b4db8076c3295bfe9a
+timeCreated: 1556714044
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145319
+  packageName: 3D Monster Bomb!!
+  packageVersion: 1.0
+  assetPath: Assets/JKT_ART/etc/grid.mat
+  uploadId: 308531

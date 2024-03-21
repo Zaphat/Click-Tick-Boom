@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5a61c6b823361c04981d820d46ab2549
+timeCreated: 1556715015
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145319
+  packageName: 3D Monster Bomb!!
+  packageVersion: 1.0
+  assetPath: Assets/JKT_ART/mon_00/ani/mon00_damage.anim
+  uploadId: 308531

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 87622ba435e91e141b2dff4e02563a78
+timeCreated: 1555142262
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145319
+  packageName: 3D Monster Bomb!!
+  packageVersion: 1.0
+  assetPath: Assets/JKT_ART/mon_00/materials/spark_fx01.mat
+  uploadId: 308531

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 91352a010cf16984290e15ee06b16a9d
+timeCreated: 1555125466
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145319
+  packageName: 3D Monster Bomb!!
+  packageVersion: 1.0
+  assetPath: Assets/JKT_ART/etc/camera_rot.anim
+  uploadId: 308531
