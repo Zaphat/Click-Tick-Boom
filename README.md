@@ -1,4 +1,4 @@
-My first ever made game.
+My first game ever made!
 
 Tap to collect coins✨\
 Each coin collected increases score by 1🎯\
@@ -8,6 +8,6 @@ Avoid touching the bomb man at all cost 💣🎇\
 Starting from 100 points, each uncollected coin will decrease your point by 2🚑🚑\
 New background every 50 new points🔥🔥🔥\
 Over 20 background music songs that can be switched at any time🎶\
-Supports multi-touch💪\
+Supports multi-touch💪
 
-Unity version 2023
+Unity Version 2023
