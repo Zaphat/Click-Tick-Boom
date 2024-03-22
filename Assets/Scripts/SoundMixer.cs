@@ -7,13 +7,13 @@ public class SoundMixer : MonoBehaviour
     [SerializeField] private AudioMixer audioMixer;
     public void SetMusicVolume(float volume)
     {
-        if (volume == -10)
+        if (volume <= -9)
             volume = -80;
         audioMixer.SetFloat("musicVolume", volume);
     }
     public void SetSFXVolume(float volume)
     {
-        if (volume == -10)
+        if (volume <= -9)
             volume = -80;
         audioMixer.SetFloat("sfxVolume", volume);
     }

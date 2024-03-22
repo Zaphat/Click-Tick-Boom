@@ -17,7 +17,7 @@ public class Director : MonoBehaviour
     private int score = 0;
     private bool isGameOver = false;
     private bool isPenaltyTriggered = false;
-
+    private int changeBackgroundValue = 50;
     private Collider2D safeZoneCollider;
     IEnumerator waitAndSpawnNewCoin(GameObject gameObject, float time = 3.0f)
     {
@@ -43,6 +43,14 @@ public class Director : MonoBehaviour
         yield return new WaitUntil(() => score <= 0 && isPenaltyTriggered && !isGameOver);
         isGameOver = true;
         StartCoroutine(GameOver(0.0f));
+    }
+    // trigger background change every 100 points
+    IEnumerator changeBackground()
+    {
+        yield return new WaitUntil(() => score >= changeBackgroundValue && !isGameOver);
+        changeBackgroundValue += 50;
+        SwitchBackground.instance.ChangeImage();
+        StartCoroutine(changeBackground());
     }
     IEnumerator waitAndSpawnNewBomb(GameObject gameObject, float time = 2.0f)
     {
@@ -82,7 +90,7 @@ public class Director : MonoBehaviour
     {
         if (isGameOver)
             return;
-        score += 10;
+        score += 20;
         scoreText.text = score.ToString();
         SFX.instance.PlayOnPickup(levelUp, jewel.transform, 5.0f);
         Destroy(jewel);
@@ -126,7 +134,7 @@ public class Director : MonoBehaviour
         isGameOver = true;
         var animator = bomb.GetComponent<Animator>();
         animator.SetTrigger("explode");
-        SFX.instance.PlayOnPickup(bombSounds, bomb.transform, 2.5f);
+        SFX.instance.PlayOnPickup(bombSounds, bomb.transform, 4.0f);
         float animationLength = animator.GetCurrentAnimatorStateInfo(0).length;
         Destroy(bomb, animationLength);
         StartCoroutine(GameOver(animationLength));
@@ -173,11 +181,12 @@ public class Director : MonoBehaviour
         sizeY = coinPrefab.GetComponent<SpriteRenderer>().bounds.size.y + 1.25f;
         safeZoneCollider = this.gameObject.GetComponent<Collider2D>();
 
-
+        // Spawn initial objects
         StartCoroutine(waitAndSpawnNewBomb(Instantiate(bombPrefab, getRandomPosition(), Quaternion.Euler(0, 180, 0))));
         StartCoroutine(waitAndSpawnNewCoin(Instantiate(coinPrefab, new Vector3(0, 0, 0), Quaternion.identity)));
-
+        // Game Conditions
         StartCoroutine(scoreReachedZero());
+        StartCoroutine(changeBackground());
     }
     void FixedUpdate()
     {
